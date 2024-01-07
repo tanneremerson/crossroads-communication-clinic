@@ -49,8 +49,12 @@ export default function Home() {
               who stutter. Brain: a journal fo neurology, 136 Pt 12, 3709-26.
             </p>
           </div>
-          <div id={MISSION_ID} className="bg-grey-200 w-11/12 rounded-lg p-3">
-            MISSION STATEMENT
+          <div id={MISSION_ID} className="bg-grey-200 w-11/12 rounded-lg p-5 text-secondary-500">
+            <Header2>
+              Whether you speak fluently or stutter on every word you say, your voice matters.
+            </Header2>
+            <br />
+            <Header2>Isn’t it time you showed that to the rest of the world?</Header2>
           </div>
           <div id={CONNECT_ID} className="bg-grey-200 w-11/12 rounded-lg p-3">
             CONNECT
