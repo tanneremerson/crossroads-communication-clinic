@@ -9,7 +9,9 @@ export default function Home() {
   return (
     <main>
       <Nav></Nav>
-      <Header1>LOGO</Header1>
+      <div className="pl-[5%]">
+        <Header1>LOGO</Header1>
+      </div>
       <div className="p-[5%]">
         Is a speech therapy clinic based in Sandy, UT. Our mission is to provide holistic,
         neurodiversity-affirming speech therapy to people who stutter of all ages.
@@ -27,7 +29,7 @@ export default function Home() {
               alt="Picture of SLP"
               width={200}
               height={200}
-              className="rounded-xl float-right"
+              className="float-right pl-3"
             ></Image>
             <p>
               Since first learning about stuttering, I have had a deep interest in working with
@@ -56,8 +58,39 @@ export default function Home() {
             <br />
             <Header2>Isn’t it time you showed that to the rest of the world?</Header2>
           </div>
-          <div id={CONNECT_ID} className="bg-grey-200 w-11/12 rounded-lg p-3">
-            CONNECT
+          <div
+            id={CONNECT_ID}
+            className="bg-grey-200 w-11/12 rounded-lg p-5 grid justify-center place-items-center"
+          >
+            <Header1>LOGO</Header1>
+            <Header2>connect now for a free consultation</Header2>
+            <form className="mb-4 grid place-items-center justify-center w-full">
+              <div className="mb-4 w-full">
+                <label className="block text-gray-700 text-sm font-bold mb-2">
+                  Email
+                </label>
+                <input
+                  className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="email"
+                  type="text"
+                />
+              </div>
+              <div className="mb-4 w-full">
+                <label className="block text-gray-700 text-sm font-bold mb-2">
+                  Message
+                </label>
+                <textarea
+                  className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  id="message"
+                />
+              </div>
+              <button
+                className="bg-primary-500 hover:bg-primary-700 text-grey-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                type="button"
+              >
+                Submit
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -67,7 +100,7 @@ export default function Home() {
 
 function Header1({ children }: { children: string }) {
   // TODO: PADDING SHOULDN'T BE HERE IN IT'S CURRENT FORM
-  return <h1 className="text-2xl pl-[5%] font-bold">{children}</h1>;
+  return <h1 className="text-4xl font-bold">{children}</h1>;
 }
 
 function Header2({ children }: { children: string }) {
