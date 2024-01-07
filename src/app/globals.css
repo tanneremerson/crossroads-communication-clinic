@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  background-color: theme('colors.grey.100');
+}
+
+a {
+  color: theme('colors.primary.500');
+}
+a:hover {
+  color: theme('colors.primary.700');
+  text-decoration: underline;
+}
+
+h1 {
+  color: theme('colors.primary.500');
+}
