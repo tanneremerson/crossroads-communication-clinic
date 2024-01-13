@@ -10,7 +10,13 @@ export default function Home() {
     <main>
       <Nav></Nav>
       <div className="pl-[5%]">
-        <Header1>LOGO</Header1>
+        <Image
+          src="/two-word-logo.png"
+          alt="Picture of SLP"
+          width={300}
+          height={100}
+          className="pl-3"
+        />
       </div>
       <div className="p-[5%] text-xl">
         Is a speech therapy clinic based in Sandy, UT. Our mission is to provide holistic,
@@ -30,7 +36,7 @@ export default function Home() {
               width={200}
               height={300}
               className="float-right pl-3"
-            ></Image>
+            />
             <p className="text-xl">
               Since first learning about stuttering, I have had a deep interest in working with
               people who stutter. I had the privilege of earning my Master’s degree at the
@@ -63,8 +69,14 @@ export default function Home() {
             id={CONNECT_ID}
             className="bg-grey-200 w-11/12 rounded-lg p-5 flex flex-col justify-center"
           >
-            <div className="text-center w-full">
-              <Header1>LOGO</Header1>
+            <div className="">
+              <Image
+                src="/one-word-logo.png"
+                alt="Picture of SLP"
+                width={300}
+                height={100}
+                className="mx-auto"
+              />
             </div>
             <div className="text-center w-full">
               <h2 className="text-3xl font-bold">connect now for a free consultation</h2>
@@ -106,11 +118,6 @@ export default function Home() {
       </div>
     </main>
   );
-}
-
-function Header1({ children }: { children: string }) {
-  // TODO: PADDING SHOULDN'T BE HERE IN IT'S CURRENT FORM
-  return <h1 className="text-4xl font-bold">{children}</h1>;
 }
 
 function Nav() {
