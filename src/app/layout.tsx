@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Cormorant } from 'next/font/google';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 import './globals.css';
 
 const cormorant = Cormorant({
@@ -16,6 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${cormorant.variable} font-seriff`}>
       <body>{children}</body>
+      <SpeedInsights />
     </html>
   );
 }
