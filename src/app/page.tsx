@@ -75,36 +75,8 @@ export default function Home() {
             <div className="text-center w-full">
               <h2 className="text-3xl font-bold">connect now for a free consultation</h2>
             </div>
-            <div className="text-center w-full">
-              <form>
-                <div>
-                  <div>
-                    <label className="block text-gray-700 text-xl font-bold mb-2">Email</label>
-                  </div>
-                  <div>
-                    <input
-                      className="shadow appearance-none border text-xl rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
-                      id="email"
-                      type="text"
-                    />
-                  </div>
-                </div>
-                <div className="mb-4 w-full">
-                  <label className="block text-gray-700 text-xl font-bold mb-2">Message</label>
-                  <textarea
-                    className="shadow appearance-none border rounded py-2 px-3 text-xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
-                    id="message"
-                  />
-                </div>
-                <div className="w-full">
-                  <button
-                    className="bg-primary-500 hover:bg-primary-700 text-grey-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
-                    type="button"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </form>
+            <div className="text-center w-full p-10">
+              <h2 className="text-3xl font-bold">Call or text <span className="text-primary-500">801.948.0904</span></h2>
             </div>
           </div>
           <div className="p-1" />
