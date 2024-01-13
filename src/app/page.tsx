@@ -60,37 +60,45 @@ export default function Home() {
           </div>
           <div
             id={CONNECT_ID}
-            className="bg-grey-200 w-11/12 rounded-lg p-5 grid justify-center place-items-center"
+            className="bg-grey-200 w-11/12 rounded-lg p-5 flex flex-col justify-center"
           >
-            <Header1>LOGO</Header1>
-            <Header2>connect now for a free consultation</Header2>
-            <form className="mb-4 grid place-items-center justify-center w-full">
-              <div className="mb-4 w-full">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
-                  Email
-                </label>
-                <input
-                  className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="email"
-                  type="text"
-                />
-              </div>
-              <div className="mb-4 w-full">
-                <label className="block text-gray-700 text-sm font-bold mb-2">
-                  Message
-                </label>
-                <textarea
-                  className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                  id="message"
-                />
-              </div>
-              <button
-                className="bg-primary-500 hover:bg-primary-700 text-grey-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
-                type="button"
-              >
-                Submit
-              </button>
-            </form>
+            <div className="text-center w-full">
+              <Header1>LOGO</Header1>
+            </div>
+            <div className="text-center w-full">
+              <Header2>connect now for a free consultation</Header2>
+            </div>
+            <div className="text-center w-full">
+              <form>
+                <div>
+                  <div>
+                    <label className="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                  </div>
+                  <div>
+                    <input
+                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
+                      id="email"
+                      type="text"
+                    />
+                  </div>
+                </div>
+                <div className="mb-4 w-full">
+                  <label className="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                  <textarea
+                    className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
+                    id="message"
+                  />
+                </div>
+                <div className='w-full'>
+                <button
+                  className="bg-primary-500 hover:bg-primary-700 text-grey-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                  type="button"
+                >
+                  Submit
+                </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
