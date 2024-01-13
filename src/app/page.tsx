@@ -101,6 +101,7 @@ export default function Home() {
               </form>
             </div>
           </div>
+          <div className="p-1" />
         </div>
       </div>
     </main>
