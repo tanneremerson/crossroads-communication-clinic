@@ -12,7 +12,7 @@ export default function Home() {
       <div className="pl-[5%]">
         <Header1>LOGO</Header1>
       </div>
-      <div className="p-[5%]">
+      <div className="p-[5%] text-xl">
         Is a speech therapy clinic based in Sandy, UT. Our mission is to provide holistic,
         neurodiversity-affirming speech therapy to people who stutter of all ages.
         <br />
@@ -23,15 +23,15 @@ export default function Home() {
       <div>
         <div className="grid grid-cols-1 gap-4 justify-items-center text-sm">
           <div id={ABOUT_ID} className="bg-grey-200 w-11/12 rounded-lg p-3">
-            <Header2>about me</Header2>
+            <h2 className="text-3xl font-bold">about me</h2>
             <Image
               src="/katie.png"
               alt="Picture of SLP"
               width={200}
-              height={200}
+              height={300}
               className="float-right pl-3"
             ></Image>
-            <p>
+            <p className="text-xl">
               Since first learning about stuttering, I have had a deep interest in working with
               people who stutter. I had the privilege of earning my Master’s degree at the
               University of Texas, Austin. There, I was fortunate to train at the Arthur M. Blank
@@ -52,11 +52,12 @@ export default function Home() {
             </p>
           </div>
           <div id={MISSION_ID} className="bg-grey-200 w-11/12 rounded-lg p-5 text-secondary-500">
-            <Header2>
+            <h2 className="text-3xl font-bold">
               Whether you speak fluently or stutter on every word you say, your voice matters.
-            </Header2>
-            <br />
-            <Header2>Isn’t it time you showed that to the rest of the world?</Header2>
+              <br />
+              <br />
+              Isn’t it time you showed that to the rest of the world?
+            </h2>
           </div>
           <div
             id={CONNECT_ID}
@@ -66,36 +67,36 @@ export default function Home() {
               <Header1>LOGO</Header1>
             </div>
             <div className="text-center w-full">
-              <Header2>connect now for a free consultation</Header2>
+              <h2 className="text-3xl font-bold">connect now for a free consultation</h2>
             </div>
             <div className="text-center w-full">
               <form>
                 <div>
                   <div>
-                    <label className="block text-gray-700 text-sm font-bold mb-2">Email</label>
+                    <label className="block text-gray-700 text-xl font-bold mb-2">Email</label>
                   </div>
                   <div>
                     <input
-                      className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
+                      className="shadow appearance-none border text-xl rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
                       id="email"
                       type="text"
                     />
                   </div>
                 </div>
                 <div className="mb-4 w-full">
-                  <label className="block text-gray-700 text-sm font-bold mb-2">Message</label>
+                  <label className="block text-gray-700 text-xl font-bold mb-2">Message</label>
                   <textarea
-                    className="shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
+                    className="shadow appearance-none border rounded py-2 px-3 text-xl text-gray-700 leading-tight focus:outline-none focus:shadow-outline w-full"
                     id="message"
                   />
                 </div>
-                <div className='w-full'>
-                <button
-                  className="bg-primary-500 hover:bg-primary-700 text-grey-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
-                  type="button"
-                >
-                  Submit
-                </button>
+                <div className="w-full">
+                  <button
+                    className="bg-primary-500 hover:bg-primary-700 text-grey-100 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-full"
+                    type="button"
+                  >
+                    Submit
+                  </button>
                 </div>
               </form>
             </div>
@@ -111,13 +112,9 @@ function Header1({ children }: { children: string }) {
   return <h1 className="text-4xl font-bold">{children}</h1>;
 }
 
-function Header2({ children }: { children: string }) {
-  return <h2 className="text-xl font-bold">{children}</h2>;
-}
-
 function Nav() {
   return (
-    <div className="flex flex-row-reverse space-x-3 space-x-reverse pr-[5%] pt-4 text-l font-medium">
+    <div className="flex flex-row-reverse space-x-3 space-x-reverse pr-[5%] pt-4 text-2xl font-medium">
       <Link href={`#${CONNECT_ID}`}>connect</Link>
       <Link href={`#${ABOUT_ID}`}>about</Link>
     </div>
