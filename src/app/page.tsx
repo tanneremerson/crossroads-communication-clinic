@@ -22,8 +22,8 @@ export default function Home() {
       </div>
       <div>
         <div className="grid grid-cols-1 gap-4 justify-items-center text-sm">
-          <div id={ABOUT_ID} className="bg-grey-200 w-11/12 rounded-lg p-3">
-            <h2 className="text-3xl font-bold">about me</h2>
+          <div id={ABOUT_ID} className="bg-grey-200 w-11/12 rounded-lg p-10">
+            <h2 className="text-3xl font-bold pb-5">about me</h2>
             <Image
               src="/katie.png"
               alt="Picture of SLP"
@@ -51,7 +51,7 @@ export default function Home() {
               who stutter. Brain: a journal fo neurology, 136 Pt 12, 3709-26.
             </p>
           </div>
-          <div id={MISSION_ID} className="bg-grey-200 w-11/12 rounded-lg p-5 text-secondary-500">
+          <div id={MISSION_ID} className="bg-grey-200 w-11/12 rounded-lg p-10 text-secondary-500">
             <h2 className="text-3xl font-bold text-center">
               Whether you speak fluently or stutter on every word you say, your voice matters.
               <br />
