@@ -10,13 +10,7 @@ export default function Home() {
     <main>
       <Nav></Nav>
       <div className="pl-[5%]">
-        <Image
-          src="/logo.png"
-          alt="Picture of SLP"
-          width={300}
-          height={100}
-          className="pl-3"
-        />
+        <Image src="/logo.png" alt="Picture of SLP" width={300} height={100} className="pl-3" />
       </div>
       <div className="p-[5%] text-xl">
         Is a speech therapy clinic based in Sandy, UT. Our mission is to provide holistic,
@@ -47,9 +41,9 @@ export default function Home() {
               <br />
               <br />
               Research shows us that stuttering occurs due to differences in brain structure and
-              function (Chang, 2013,) and that the most impactful way for people who stutter to
-              effect long-term change is to develop strong communication skills, resiliency,
-              self-advocacy, and self-compassion.
+              function (Chang, 2013,) and I believe that the most impactful way for people who
+              stutter to effect long-term change is to develop strong communication skills,
+              resiliency, self-advocacy, and self-compassion.
             </p>
             <br />
             <p className="text-xs font-thin">
