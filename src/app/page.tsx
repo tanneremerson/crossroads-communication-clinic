@@ -11,7 +11,7 @@ export default function Home() {
       <Nav></Nav>
       <div className="pl-[5%]">
         <Image
-          src="/two-word-logo.png"
+          src="/logo.png"
           alt="Picture of SLP"
           width={300}
           height={100}
