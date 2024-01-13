@@ -27,7 +27,7 @@ export default function Home() {
             <Image
               src="/katie.png"
               alt="Picture of SLP"
-              width={200}
+              width={150}
               height={300}
               className="float-right pl-3"
             />
