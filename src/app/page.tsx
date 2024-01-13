@@ -52,7 +52,7 @@ export default function Home() {
             </p>
           </div>
           <div id={MISSION_ID} className="bg-grey-200 w-11/12 rounded-lg p-5 text-secondary-500">
-            <h2 className="text-3xl font-bold">
+            <h2 className="text-3xl font-bold text-center">
               Whether you speak fluently or stutter on every word you say, your voice matters.
               <br />
               <br />
