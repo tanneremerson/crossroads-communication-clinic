@@ -31,8 +31,10 @@ States: Alabama, Alaska, Arkansas, Colorado, Delaware, Florida, Georgia, Hawaii,
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} font-seriff`}>
-      <body>{children}</body>
-      <SpeedInsights />
+      <body>
+        {children}
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
