@@ -76,7 +76,12 @@ export default function Home() {
               <h2 className="text-3xl font-bold">connect now for a free consultation</h2>
             </div>
             <div className="text-center w-full p-10">
-              <h2 className="text-3xl font-bold">Call or text <span className="text-primary-500"><Link href="tel:8019480904">801.948.0904</Link></span></h2>
+              <h2 className="text-3xl font-bold">
+                Call or text{' '}
+                <span className="text-primary-500">
+                  <Link href="tel:8019480904">801.948.0904</Link>
+                </span>
+              </h2>
             </div>
           </div>
           <div className="p-1" />
