@@ -13,8 +13,9 @@ export default function Home() {
         <Image src="/logo.png" alt="Picture of SLP" width={300} height={100} className="pl-3" />
       </div>
       <div className="p-[5%] text-xl">
-        Is a speech therapy clinic based in Sandy, UT. Our mission is to provide holistic,
-        neurodiversity-affirming speech therapy to people who stutter of all ages.
+        Crossroads Communication Clinic is a speech therapy clinic based in Sandy, UT. Our mission
+        is to provide holistic, neurodiversity-affirming speech therapy to people who stutter of all
+        ages.
         <br />
         <br />
         Learn to embrace your authentic voice, speak confidently and skillfully, and excel as a
